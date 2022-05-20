@@ -12,13 +12,13 @@ global.APIKeys = {
 }
 
 // Other
-global.owner = ['6285731706147']
-global.premium = ['6285731706147']
+global.owner = ['6285731706147','081251051640']
+global.premium = ['6285731706147','081251051640']
 global.ownername = 'Zall Pesstore'
 global.botname = 'Zets Public'
 global.packname = '© ZALL - MULTI DEVICE'
 global.gc = 'https://chat.whatsapp.com/CJp4EUkUOaX3IgD5UA6t2V'
-global.limitawal = '100'
+global.limitawal = '25'
 global.author = '@naando.jpeg\n@alya.xzy'
 global.sessionName = 'sessionya'
 global.prefa = ['','!','.','🐦','🐤','🗿']
