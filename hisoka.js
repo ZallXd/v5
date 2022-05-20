@@ -26,7 +26,7 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 const setting = JSON.parse(fs.readFileSync('./apikey.json'))
 
 //limit
-limitawal = '100'
+limitawal = '25'
 botname = 'ZALL - MD'
 wm = '© ZALL - MD'
 
@@ -552,7 +552,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'sc':  case 'sourcecode': {
 	        anu = `
-⌕ Script : https://github.com/zallbot/Zetspublic.git
+⌕ Script : https://github.com/ZallXd/v7.git
 ⌕ Script ori : https://github.com/DikaArdnt/Hisoka-Morou
 
 Jangan lupa kasih bintang.
@@ -2549,8 +2549,8 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
 
              case 'menu': case 'help': case '?': {
              kon = await getBuffer(`https://telegra.ph/file/5b7dfa74a98f61347570e.jpg`)
-             fot = 'note: jika kamu pakai wa mod langsung aja\nketik #allmenu\nJagan spam ya bang, kuntullll'             
-             anu = `Hai kak ${pushname}, have a nice day:)
+             fot = 'NOTE : BOT WA MILIK ZALL PESSTORE'             
+             anu = `Hai kak ${pushname}, you have a pretty girlfriend?
 
 Saya adalah ${botname}, yang memudahakan anda
 untuk membuat stiker dan lain lain
@@ -2598,7 +2598,7 @@ untuk membuat stiker dan lain lain
 
             case 'menuall': case 'allmenu': {
                 buffer = await getBuffer(`https://telegra.ph/file/5b7dfa74a98f61347570e.jpg`)
-                anu = `Hai ${pushname}, jangan spam ya😁
+                anu = `Hai ${pushname}, jangan spam ya onee chan
                 
                               
 ✘ *G R O U P - F E A T U R E*
@@ -2886,7 +2886,7 @@ untuk membuat stiker dan lain lain
                 let btn = [{
                                 urlButton: {
                                     displayText: 'Instagram',
-                                    url: 'https://instagram.com/naando.jpeg'
+                                    url: 'https://instagram.com/zall_pesstore'
                                 }
                             }, {
                                 quickReplyButton: {
