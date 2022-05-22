@@ -2607,11 +2607,6 @@ untuk membuat stiker dan jualan akun
                 
  *Z A L L – M E N U*
 ⌕ ${prefix}jaspost
-⌕ ${prefix}
-⌕ ${prefix}
-⌕ ${prefix}
-⌕ ${prefix}
-⌕ ${prefix}
                               
  *G R O U P – F E A T U R E*
 
