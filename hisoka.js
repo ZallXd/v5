@@ -26,7 +26,7 @@ const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, 
 const setting = JSON.parse(fs.readFileSync('./apikey.json'))
 
 //limit
-limitawal = '25'
+limitawal = '100'
 botname = 'ZALL - MD'
 wm = '© ZALL - MD'
 
@@ -552,13 +552,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'sc':  case 'sourcecode': {
 	        anu = `
-⌕ Script : https://github.com/ZallXd/v7.git
-⌕ Script ori : https://github.com/DikaArdnt/Hisoka-Morou
+ *SEWA – BOT*
+– 1 MINGGU = 5K
+– 1 BULAN = 10K
+– PERMANEN = 15K
 
-Jangan lupa kasih bintang.
-⌕ Donate : Wa.me/+6281251051640
-
-Dont Forget Donate
+MINAT? SUNG WA ZALL PESSTORE
+⌕ Wa gw : Wa.me/+6281251051640
 `
 	                let btn = [{
                                 urlButton: {
@@ -1163,6 +1163,11 @@ break
                 hisoka.sendText(m.chat, `https://chat.whatsapp.com/${response}\n\nLink Group : ${groupMetadata.subject}`, m, { detectLink: true })
             }
             break
+            case 'jaspost': {
+            anu = `Mau jaspost gratis?
+            wa saja zall pesstore.
+            wa nya Wa.me/+6281251051640
+            `
             case 'ephemeral': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
@@ -2550,12 +2555,12 @@ ${cpus.map((cpu, i) => `${i + 1}. ${cpu.model.trim()} (${cpu.speed} MHZ)\n${Obje
              case 'menu': case 'help': case '?': {
              kon = await getBuffer(`https://telegra.ph/file/5b7dfa74a98f61347570e.jpg`)
              fot = 'NOTE : BOT WA MILIK ZALL PESSTORE'             
-             anu = `Hai kak ${pushname}, you have a pretty girlfriend?
+             anu = `Hai kak ${pushname}, have a nice day:)
 
 Saya adalah ${botname}, yang memudahakan anda
-untuk membuat stiker dan lain lain
+untuk membuat stiker dan jualan akun
             
-✘ *I N F O - B O T*
+ *I N F O - B O T*
 
 ⌕ *Bot Name:* _${global.botname}_
 ⌕ *Owner Name:* _${global.ownername}_
@@ -2566,7 +2571,7 @@ untuk membuat stiker dan lain lain
 ⌕ *Library:* _Baileys-Md_
 
 
-✘ *Y O U R - I N F O*
+ *Y O U R - I N F O*
 
 ⌕ *Your Name:* _${pushname}_
 ⌕ *Your Limit:* _${limitawal}_
@@ -2578,7 +2583,7 @@ untuk membuat stiker dan lain lain
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
+                                    displayText: 'Sewa',
                                     id: 'sc'
                                 }
                             }, {
@@ -2598,10 +2603,17 @@ untuk membuat stiker dan lain lain
 
             case 'menuall': case 'allmenu': {
                 buffer = await getBuffer(`https://telegra.ph/file/5b7dfa74a98f61347570e.jpg`)
-                anu = `Hai ${pushname}, jangan spam ya onee chan
+                anu = `Hai ${pushname}, jangan spam ya😁
                 
+ *Z A L L – M E N U*
+⌕ ${prefix}jaspost
+⌕ ${prefix}
+⌕ ${prefix}
+⌕ ${prefix}
+⌕ ${prefix}
+⌕ ${prefix}
                               
-✘ *G R O U P - F E A T U R E*
+ *G R O U P – F E A T U R E*
 
 ⌕ ${prefix}linkgroup
 ⌕ ${prefix}ephemeral [option]
@@ -2625,7 +2637,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}hapusvote
 
 
-✘ *D O W N L O A D E R*
+ *D O W N L O A D E R*
 
 ⌕ ${prefix}tiktoknowm [url]
 ⌕ ${prefix}tiktokwm [url]
@@ -2644,7 +2656,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}soundcloud [url]
 
 
-✘ *S E A R C H - F E A T U R E*
+ *S E A R C H – F E A T U R E*
 
 ⌕ ${prefix}play [query]
 ⌕ ${prefix}yts [query]
@@ -2658,7 +2670,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}stalk [option] [query]
 
 
-✘ *R A N D O M*
+ *R A N D O M*
 
 ⌕ ${prefix}coffe
 ⌕ ${prefix}quotesanime
@@ -2679,7 +2691,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}blowjob (nsfw)
 
 
-✘ *T E X T - P R O*
+ *T E X T – P R O*
 
 ⌕ ${prefix}3dchristmas
 ⌕ ${prefix}3ddeepsea
@@ -2714,7 +2726,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}gluetext
 
 
-✘ *P H O T O - O X Y*
+ *P H O T O – O X Y*
 
 ⌕ ${prefix}shadow
 ⌕ ${prefix}romantic
@@ -2730,7 +2742,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}retrolol
 
 
-✘ *E - P H O T O*
+ *E – P H O T O*
 
 ⌕ ${prefix}ffcover
 ⌕ ${prefix}crossfire
@@ -2743,7 +2755,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}ytcertificate
 
 
-✘ *F U N - F E A T U R E*
+ *F U N – F E A T U R E*
 
 ⌕ ${prefix}halah
 ⌕ ${prefix}hilih
@@ -2760,7 +2772,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}suitpvp [@tag]
 
 
-✘ *P R I M B O N*
+ *P R I M B O N*
 
 ⌕ ${prefix}nomorhoki
 ⌕ ${prefix}artimimpi
@@ -2794,7 +2806,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}shio
 
 
-✘ *C O N V E R T - S T I C K E R*
+ *C O N V E R T – S T I C K E R*
 
 ⌕ ${prefix}toimage
 ⌕ ${prefix}removebg
@@ -2811,7 +2823,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}styletext
 
 
-✘ *M A I N - M E N U*
+ *M A I N – M E N U*
 
 ⌕ ${prefix}ping
 ⌕ ${prefix}owner
@@ -2825,7 +2837,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}speedtest
 
 
-✘ *D A T A B A S E*
+ *D A T A B A S E*
 
 ⌕ ${prefix}setcmd
 ⌕ ${prefix}listcmd
@@ -2837,7 +2849,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}delmsg
 
 
-✘ *A N O N Y M O U S - C H A T*
+ *A N O N Y M O U S – C H A T*
 
 ⌕ ${prefix}anonymous
 ⌕ ${prefix}start
@@ -2846,7 +2858,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}sendkontak
 
 
-✘ *I S L A M - F E A T U R E*
+ *I S L A M – F E A T U R E*
 
 ⌕ ${prefix}iqra
 ⌕ ${prefix}hadist
@@ -2855,7 +2867,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}tafsirsurah
 
 
-✘ *V O I C E - C H A N G E R*
+ *V O I C E – C H A N G E R*
 
 ⌕ ${prefix}bass
 ⌕ ${prefix}blown
@@ -2870,7 +2882,7 @@ untuk membuat stiker dan lain lain
 ⌕ ${prefix}tupai
 
 
-✘ *O W N E R - M E N U*
+ *O W N E R – M E N U*
 
 ⌕ ${prefix}react [emoji]
 ⌕ ${prefix}chat [option]
@@ -2886,11 +2898,11 @@ untuk membuat stiker dan lain lain
                 let btn = [{
                                 urlButton: {
                                     displayText: 'Instagram',
-                                    url: 'https://instagram.com/zall_pesstore'
+                                    url: 'https://instagram.com/naando.jpeg'
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Script',
+                                    displayText: 'Sewa',
                                     id: 'sc'
                                 }
                             }, {
